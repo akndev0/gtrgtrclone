@@ -3,6 +3,9 @@
   "engines": {
     "node": "14.17.6"
   },
+  "browser":{
+"child_process": false
+}  
   "scripts": {
   "dev": "next",
   "build": "next build",
