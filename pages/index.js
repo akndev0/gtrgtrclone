@@ -62,19 +62,19 @@ export default function Home({GetirCategories,GetirCampaigns,GetirFavorities,Get
 
 export async function getServerSideProps(){
   
-   const GetirCategories=await fetch("http://localhost:3000/api/categories").then(
+   const GetirCategories=await fetch("/api/categories").then(
     (res)=>res.json()
   );
-  const GetirCampaigns=await fetch("http://localhost:3000/api/campaigns").then(
+  const GetirCampaigns=await fetch("/api/campaigns").then(
     (res)=>res.json()
   );
-  const GetirFavorities=await fetch("http://localhost:3000/api/favorities").then(
+  const GetirFavorities=await fetch("/api/favorities").then(
     (res)=>res.json()
   );
-  const GetirHomeCards=await fetch("http://localhost:3000/api/homeCards").then(
+  const GetirHomeCards=await fetch("/api/homeCards").then(
     (res)=>res.json()
   );
-  const GetirFooter=await fetch("http://localhost:3000/api/footer").then(
+  const GetirFooter=await fetch("/api/footer").then(
     (res)=>res.json()
   );
 
