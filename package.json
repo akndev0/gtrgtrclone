@@ -4,9 +4,9 @@
     "node": "14.17.6"
   },
   "scripts": {
-    "dev": "next",
+  "dev": "next",
   "build": "next build",
-  "start": "next start ",
+  "start": "next start "
  
    
   },
