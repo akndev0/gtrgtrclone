@@ -11,7 +11,7 @@
   "build": "next build",
   
   "start": "next start -p $PORT",
- "heroku-postbuild": "webpack -p"
+ "heroku-postbuild": "npm run build"
    
   },
   "dependencies": {
