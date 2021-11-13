@@ -7,11 +7,12 @@
 "child_process": false
 },  
   "scripts": {
-  "dev": "next",
+  //"dev": "next",
   "build": "next build",
-  
-  "start": "next start -p $PORT",
- "heroku-postbuild": "npm run build"
+  "dev": "next dev -p 8080", // for dev 
+  "start": "next start -p 8080" // for prod
+  //"start": "next start -p $PORT",
+ //"heroku-postbuild": "npm run build"
    
   },
   "dependencies": {
