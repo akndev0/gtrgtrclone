@@ -5,7 +5,7 @@
   },
   "browser":{
 "child_process": false
-}  
+},  
   "scripts": {
   "dev": "next",
   "build": "next build",
