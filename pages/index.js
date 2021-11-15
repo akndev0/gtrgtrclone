@@ -62,21 +62,26 @@ export default function Home({GetirCategories,GetirCampaigns,GetirFavorities,Get
 
 export async function getServerSideProps(){
   
-   const GetirCategories=await fetch("https://gtrgtrclone.herokuapp.com//api/categories").then(
+ const baseUrl = process.env.BASE_URL
+
+   const GetirCategories=await fetch(`${baseUrl}/api/categories`).then(
     (res)=>res.json()
   );
-  const GetirCampaigns=await fetch("https://gtrgtrclone.herokuapp.com//api/campaigns").then(
+  const GetirCampaigns=await fetch(`${baseUrl}/api/campaigns`).then(
     (res)=>res.json()
   );
-  const GetirFavorities=await fetch("https://gtrgtrclone.herokuapp.com//api/favorities").then(
+  const GetirFavorities=await fetch(`${baseUrl}/api/favorities`).then(
     (res)=>res.json()
   );
-  const GetirHomeCards=await fetch("https://gtrgtrclone.herokuapp.com//api/homeCards").then(
+  const GetirHomeCards=await fetch(`${baseUrl}/api/homeCards`).then(
     (res)=>res.json()
   );
-  const GetirFooter=await fetch("https://gtrgtrclone.herokuapp.com//api/footer").then(
+  const GetirFooter=await fetch(`${baseUrl}/api/footer`).then(
     (res)=>res.json()
   );
+
+
+ 
 
 
  
