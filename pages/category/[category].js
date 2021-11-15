@@ -45,11 +45,11 @@ function id({ GetirProducts, GetirFooter }) {
 
 export async function getServerSideProps({ params }) {
   const { category } = params
-  const baseUrl = process.env.BASE_URL
-  const GetirProducts = await fetch(`${baseUrl}/api/products/${encodeURIComponent(category)}`).then(
+  
+  const GetirProducts = await fetch("https://gtrgtrclone.herokuapp.com"/api/products/${encodeURIComponent(category)}").then(
     (res) => res.json()
   );
-  const GetirFooter = await fetch(`${baseUrl}/api/footer`).then(
+  const GetirFooter = await fetch("https://gtrgtrclone.herokuapp.com/api/footer").then(
     (res) => res.json()
   );
 
