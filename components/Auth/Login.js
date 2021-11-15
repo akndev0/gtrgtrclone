@@ -23,7 +23,7 @@ function Login() {
 
   const handleSubmit = async e => {
     e.preventDefault()
-     const res = await postData('auth/login', userData)
+     const res = await postData('https://gtrgtrclone.herokuapp.com/api/auth/login', userData)
     
      if(res.err) return dispatch(notifyAuth( res.err))
      dispatch(notifyAuth( res.msg))
