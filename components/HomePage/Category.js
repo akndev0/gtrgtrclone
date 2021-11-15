@@ -9,7 +9,7 @@ function Category({ _id, img, title }) {
 
   return (
     <>
-    <Link href={`/category/${title}`}>
+    <Link href={`https://gtrgtrclone.herokuapp.com/category/${title}`}>
     <div key={_id} className=" m-3  mx-auto md:mx-0 hover:bg-purple-400 hover:rounded-md hover:cursor-pointer">
       <div className="flex flex-col items-center md:h-32 md:w-32 ">
 
