@@ -155,7 +155,7 @@ function index({ food }) {
 }
 export async function getServerSideProps({ query }) {
 
-  const baseUrl = process.env.BASE_URL
+  
   const cuisine = query.cuisine || 'all'
   const deliveryType = query.deliveryType || 'all'
   const payment = query.payment || 'all'
@@ -166,7 +166,7 @@ export async function getServerSideProps({ query }) {
 
 
   
-  const restData = await fetch(`${baseUrl}/api/restaurants?cuisine=${cuisine}&deliveryType=${deliveryType}&payment=${payment}&minOrder=${minOrder}&sort=${sort}`).then(
+  const restData = await fetch(`https://gtrgtrclone.herokuapp.com/api/restaurants?cuisine=${cuisine}&deliveryType=${deliveryType}&payment=${payment}&minOrder=${minOrder}&sort=${sort}`).then(
     (res) => res.json()
   );
 
