@@ -62,7 +62,7 @@ export default function Home({GetirCategories,GetirCampaigns,GetirFavorities,Get
 
 export async function getServerSideProps(){
   
- 
+    const baseUrl = process.env.BASE_URL
 
    const GetirCategories=await fetch(`${baseUrl}/api/categories`).then(
     (res)=>res.json()
