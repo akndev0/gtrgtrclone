@@ -85,7 +85,7 @@ function Header({ active }) {
     <div className="sticky top-0 z-50 bg-gtr h-14">
       <div className="grid md:grid-cols-2 md:max-w-screen-2xl mx-auto overflow-y-hidden">
         <div className="flex flex-row h-10 items-center  cursor-pointer space-x-2 mt-4" loading="lazy">
-        <Link  href="/category/Su%20%26%20%C4%B0%C3%A7ecek" > 
+        <Link  href="/category/Su%20%26%20İçecek" > 
           <div className="cursor-pointer rounded-t-lg align-text-bottom   ">
             <div className={`mx-1 px-1 sm:px-2  ${active == "getir" ? "bg-gtr-light" : ""} rounded-t-xl`}>
               <Image className={`  ${active == "getir" ? "" : "filter grayscale  contrast-200"} text-gray-200 `}
