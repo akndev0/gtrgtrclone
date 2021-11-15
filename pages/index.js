@@ -9,9 +9,9 @@ import Header from '../components/Header/Header'
 import HomeCards from '../components/HomePage/HomeCards'
 import SubHeaderSarch from '../components/HomePage/SubHeaderSarch'
 import Login from '../components/Auth/Login'
-
+const baseUrl = process.env.BASE_URL
 export default function Home({GetirCategories,GetirCampaigns,GetirFavorities,GetirHomeCards,GetirFooter}) {
-
+ const baseUrl = process.env.BASE_URL
  
   return (
     <div>
@@ -62,7 +62,7 @@ export default function Home({GetirCategories,GetirCampaigns,GetirFavorities,Get
 
 export async function getServerSideProps(){
   
- const baseUrl = process.env.BASE_URL
+ 
 
    const GetirCategories=await fetch(`${baseUrl}/api/categories`).then(
     (res)=>res.json()
