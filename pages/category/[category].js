@@ -45,14 +45,15 @@ function id({ GetirProducts, GetirFooter }) {
 
 export async function getServerSideProps({ params }) {
   const { category } = params
-  
-  const GetirProducts = await fetch(`http://localhost:3000/api/products/${encodeURIComponent(category)}`).then(
+  const baseUrl = process.env.BASE_URL
+  const GetirProducts = await fetch(`${baseUrl}/api/products/${encodeURIComponent(category)}`).then(
     (res) => res.json()
   );
-  const GetirFooter = await fetch("http://localhost:3000/api/footer").then(
+  const GetirFooter = await fetch(`${baseUrl}/api/footer`).then(
     (res) => res.json()
   );
 
+  
   
   return {
     props: {
