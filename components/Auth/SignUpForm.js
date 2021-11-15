@@ -45,7 +45,7 @@ function SignUpForm() {
     }
 
     if (aydinlatma == 1 && kullanim == 1) {
-      const res = await fetch(`${baseUrl}/api/auth/register`, {
+      const res = await fetch("https://gtrgtrclone.herokuapp.com/api/auth/register", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
